@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo elements</title>
+    <style>
+        body{
+            background-color: #333;
+            
+        }
+        .player{
+            text-align:center;
+            margin-top: 30px;
+        }
+        form{
+            margin-top:15px;
+        }
+        button{
+            padding: 10px;
+            border-radius:30px;
+        }
+        button:nth-child(2){
+            padding:15px;
+            border-radius:50px;
+            margin-left:5px;
+            margin-right:5px;
+            
+        }
+        button:nth-child(2):hover{
+        background-color:dimgrey;
+        }
+        button:nth-child(2):active{
+            background-color: rgb(4, 0, 255);
+        }
+        button:first-child::after{
+            content:"\1F339";
+            opacity:0.5;
+
+
+        }
+        button:nth-child(3)::before{
+            content:"\1F339"
+        }
+
+    </style>
+</head>
+<body>
+    <div class="player">
+      <iframe width="473" height="266" src="https://www.youtube.com/embed/pXRviuL6vMY" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <form>
+            <button>&#10092;</button>
+            <button>&#10148;</button>
+            <button>&#10095;</button>
+        </form>
+    </div>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo Smile</title>
+    <style>
+        body{
+            background-color: #333;
+        }
+        .smile{
+            width: 200px;
+            height: 200px;
+            background-color:yellow;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:150px;
+            border-radius: 100px;
+            text-align:center;
+            font-size:75px;
+            line-height:150px;
+            border-top:20px solid brown;
+            color:darkcyan;
+            
+        }
+        .smile::before {
+            content: "\25CF";
+            /* margin-right:10px; */
+            margin-top:100px;
+            border-right:2px solid black;
+            border-bottom:2px solid black;
+            padding:5px;
+            
+
+        }
+        .smile::after{
+            content:"\25CF";
+            /* margin-left:10px; */
+            border-left:2px solid black;
+            border-bottom:2px solid black;
+            padding:5px;
+            
+
+
+        }
+        .smile:hover{
+            background-color:darkgray;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="smile">
+
+    </div>
+    
+</body>
+</html>
